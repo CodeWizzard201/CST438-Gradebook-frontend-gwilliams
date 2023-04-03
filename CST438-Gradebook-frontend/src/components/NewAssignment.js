@@ -21,7 +21,7 @@ class NewAssignment extends React.Component {
       const token = Cookies.get('XSRF-TOKEN');
       
       fetch(`${SERVER_URL}/assignment/new/${this.state.courseId}` , 
-          {  
+          { 
             method: 'POST', 
             headers: { 'Content-Type': 'application/json',
                        'X-XSRF-TOKEN': token }, 
